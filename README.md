@@ -176,7 +176,7 @@ This project is open source and available under the MIT License.
 
 **Your Name**
 - GitHub: [@agyangg](https://github.com/agyangg)
-- Email: your.email@example.com
+- Email: g.guragain@sxg.edu.np
 
 ## Contributing
 
