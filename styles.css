@@ -1,0 +1,1024 @@
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0052a3;
+}
+
+code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+ul, ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 0.5rem;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content .tagline {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #667eea;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+
+.page-header {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+
+.intro {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.intro h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ============================================
+   INFO CARDS
+   ============================================ */
+
+.info-cards {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.info-cards .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-card p {
+    margin: 0.5rem 0;
+}
+
+.info-card .subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   FEATURED COURSES
+   ============================================ */
+
+.featured-courses {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.featured-courses h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #0066cc;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.course-card h3 {
+    margin-bottom: 1rem;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #0066cc;
+    font-weight: 600;
+}
+
+/* ============================================
+   LATEST POSTS
+   ============================================ */
+
+.latest-posts {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.latest-posts h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.posts-preview {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.post-preview {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+    transition: background-color 0.3s ease;
+}
+
+.post-preview:hover {
+    background-color: #f0f4ff;
+}
+
+.post-preview h3 {
+    margin-bottom: 0.5rem;
+}
+
+.post-preview .date {
+    color: #666;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.post-preview a {
+    font-weight: 600;
+}
+
+.view-all {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 600;
+    color: #0066cc;
+}
+
+/* ============================================
+   HIGHLIGHTS
+   ============================================ */
+
+.highlights {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.highlights h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlights-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.highlight-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.highlight-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   SCHOOL INFO
+   ============================================ */
+
+.school-info {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.school-info h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.school-info p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact > .container > p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contact-item h3 {
+    margin-bottom: 1rem;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item a {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+/* ============================================
+   PROFESSIONAL BACKGROUND
+   ============================================ */
+
+.professional-bg {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.professional-bg h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.bio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-section h3 {
+    margin-bottom: 1rem;
+}
+
+.bio-section ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.bio-section ul li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.bio-section ul li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* ============================================
+   EXPERTISE
+   ============================================ */
+
+.expertise {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.expertise h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.expertise-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0066cc;
+}
+
+.expertise-card h3 {
+    margin-bottom: 1rem;
+}
+
+/* ============================================
+   TEACHING HIGHLIGHTS
+   ============================================ */
+
+.teaching-highlights {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.teaching-highlights h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlights-list {
+    display: grid;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.highlight-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+}
+
+.highlight-number {
+    background-color: #0066cc;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.highlight-content h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   TECHNICAL SKILLS
+   ============================================ */
+
+.technical-skills {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.technical-skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.skills-category h3 {
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: white;
+    color: #0066cc;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 2px solid #0066cc;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   VISION SECTION
+   ============================================ */
+
+.vision {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.vision h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vision > .container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.vision-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-list li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #0066cc;
+    padding-left: 1.5rem;
+}
+
+/* ============================================
+   COURSES OVERVIEW
+   ============================================ */
+
+.courses-overview {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.courses-overview h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.courses-overview p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   COURSES SECTION
+   ============================================ */
+
+.courses-section {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.course-detail {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.course-detail:last-child {
+    border-bottom: none;
+}
+
+.course-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.course-icon-large {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.course-header h2 {
+    margin-bottom: 0.5rem;
+}
+
+.course-header .meta {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.course-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.course-content ul,
+.course-content ol {
+    margin-bottom: 1.5rem;
+}
+
+/* ============================================
+   ENROLLMENT
+   ============================================ */
+
+.enrollment {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.enrollment h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.enrollment-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    background-color: #0066cc;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ============================================
+   LEARNING BENEFITS
+   ============================================ */
+
+.learning-benefits {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.learning-benefits h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #0066cc;
+}
+
+.benefit-item h3 {
+    margin-bottom: 0.5rem;
+    color: #0066cc;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* ============================================
+   BLOG POSTS
+   ============================================ */
+
+.blog-posts {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-post:last-child {
+    border-bottom: none;
+}
+
+.post-header h2 {
+    margin-bottom: 1rem;
+}
+
+.post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.post-content h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.post-content h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.5rem;
+}
+
+.post-content code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 3rem 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+}
+
+.footer a {
+    color: #667eea;
+}
+
+.footer a:hover {
+    color: #764ba2;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .nav-menu a {
+        padding-bottom: 0;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        border-bottom: 2px solid #0066cc;
+        padding-bottom: 0.25rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 80px 20px;
+        min-height: 400px;
+    }
+
+    .intro,
+    .info-cards,
+    .featured-courses,
+    .latest-posts,
+    .highlights,
+    .school-info,
+    .contact,
+    .professional-bg,
+    .expertise,
+    .teaching-highlights,
+    .technical-skills,
+    .vision,
+    .courses-overview,
+    .courses-section,
+    .enrollment,
+    .learning-benefits,
+    .cta-section,
+    .blog-posts {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .nav-container {
+        height: 60px;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        gap: 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlights-list,
+    .expertise-grid,
+    .info-cards .container,
+    .benefits-list,
+    .enrollment-steps,
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
