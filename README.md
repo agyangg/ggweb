@@ -212,9 +212,9 @@ This project is open source and available under the MIT License.
 **Gyan Guragain**
 - Computer Science Teacher
 - St. Xavier's School, Godavari, Lalitpur, Nepal
-- Email: gyan.guragain@stxaviers.edu.np
+- Email: g.guragain@sxg.edu.np
 - GitHub: [@agyangg](https://github.com/agyangg)
-- LinkedIn: [Gyan Guragain](https://linkedin.com/in/gyan-guragain)
+- Facebook: [Gyan Guragain](https://www.facebook.com/guragain.g)
 
 ## 📞 Contact
 
