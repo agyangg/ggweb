@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Articles & Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">YourName</a></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>My Blog</h1>
+            <p>Thoughts, tips, and insights on web development</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-posts">
+        <div class="container">
+            <!-- Blog Post 1 -->
+            <article class="blog-post" id="post1">
+                <div class="post-header">
+                    <h2>Getting Started with HTML5</h2>
+                    <div class="post-meta">
+                        <span class="date">June 1, 2026</span>
+                        <span class="author">By Your Name</span>
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>
+                        HTML5 is the latest version of the HyperText Markup Language and brings a lot of new features and improvements.
+                        Whether you're just starting out or looking to refresh your knowledge, this guide will help you understand
+                        the fundamentals of HTML5 and best practices for writing semantic markup.
+                    </p>
+                    <h3>What's New in HTML5?</h3>
+                    <p>
+                        HTML5 introduces several new semantic elements that make it easier to structure your content meaningfully.
+                        These include elements like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>,
+                        and <code>&lt;footer&gt;</code> that provide better context to both browsers and developers.
+                    </p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Semantic Elements:</strong> Better structure with meaningful tags</li>
+                        <li><strong>Audio and Video Support:</strong> Native multimedia capabilities</li>
+                        <li><strong>Canvas and SVG:</strong> Drawing and graphics support</li>
+                        <li><strong>Improved Forms:</strong> New input types and attributes</li>
+                        <li><strong>APIs:</strong> Geolocation, localStorage, and more</li>
+                    </ul>
+                    <h3>Best Practices</h3>
+                    <p>
+                        When writing HTML5 code, always keep these best practices in mind:
+                    </p>
+                    <ul>
+                        <li>Use semantic HTML elements appropriately</li>
+                        <li>Always include proper meta tags for viewport and character encoding</li>
+                        <li>Use descriptive IDs and class names</li>
+                        <li>Ensure proper heading hierarchy (h1, h2, h3, etc.)</li>
+                        <li>Include alt text for images</li>
+                        <li>Keep your code clean and well-organized</li>
+                    </ul>
+                    <p>
+                        By following these practices, you'll create more accessible, maintainable, and SEO-friendly websites.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-post" id="post2">
+                <div class="post-header">
+                    <h2>CSS Tips for Responsive Design</h2>
+                    <div class="post-meta">
+                        <span class="date">May 28, 2026</span>
+                        <span class="author">By Your Name</span>
+                        <span class="reading-time">7 min read</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>
+                        Responsive design has become essential in modern web development. With the variety of devices and screen sizes
+                        available today, it's crucial that your websites look great on all of them. Let's explore some CSS techniques
+                        that will help you create truly responsive designs.
+                    </p>
+                    <h3>Mobile-First Approach</h3>
+                    <p>
+                        The mobile-first approach means designing for mobile devices first, then progressively enhancing the design
+                        for larger screens. This ensures your website works well on all devices and loads faster on mobile.
+                    </p>
+                    <h3>Media Queries</h3>
+                    <p>
+                        Media queries are the foundation of responsive design. They allow you to apply different CSS rules based on
+                        device characteristics like screen width, height, and orientation.
+                    </p>
+                    <h3>Flexible Grid Layouts</h3>
+                    <ul>
+                        <li><strong>CSS Grid:</strong> Two-dimensional layout system for complex designs</li>
+                        <li><strong>Flexbox:</strong> One-dimensional layout system for flexible components</li>
+                        <li><strong>Percentages:</strong> Relative sizing instead of fixed pixels</li>
+                    </ul>
+                    <h3>Responsive Images</h3>
+                    <p>
+                        Images should adapt to different screen sizes. Use CSS techniques like <code>max-width: 100%</code>
+                        or HTML's <code>&lt;picture&gt;</code> element to serve appropriate images for different devices.
+                    </p>
+                    <h3>Common Breakpoints</h3>
+                    <ul>
+                        <li>Mobile: 320px - 480px</li>
+                        <li>Tablet: 481px - 768px</li>
+                        <li>Desktop: 769px and above</li>
+                    </ul>
+                    <p>
+                        Remember, these are guidelines. Always test your design on real devices and adjust breakpoints based on your content.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-post" id="post3">
+                <div class="post-header">
+                    <h2>Web Accessibility: A Beginner's Guide</h2>
+                    <div class="post-meta">
+                        <span class="date">May 15, 2026</span>
+                        <span class="author">By Your Name</span>
+                        <span class="reading-time">6 min read</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>
+                        Web accessibility means making your website usable by everyone, including people with disabilities.
+                        It's not just a nice-to-have feature—it's a fundamental aspect of good web design.
+                    </p>
+                    <h3>Why Accessibility Matters</h3>
+                    <p>
+                        Approximately 1 in 4 adults in the U.S. have some type of disability. Making your website accessible ensures
+                        that all visitors can navigate and use your content effectively.
+                    </p>
+                    <h3>Key Accessibility Principles (WCAG)</h3>
+                    <ul>
+                        <li><strong>Perceivable:</strong> Content must be perceivable to all users</li>
+                        <li><strong>Operable:</strong> Users should be able to navigate and operate the interface</li>
+                        <li><strong>Understandable:</strong> Content and operations must be understandable</li>
+                        <li><strong>Robust:</strong> Content must work with assistive technologies</li>
+                    </ul>
+                    <h3>Practical Tips</h3>
+                    <ul>
+                        <li>Use semantic HTML elements</li>
+                        <li>Add alt text to all images</li>
+                        <li>Ensure sufficient color contrast</li>
+                        <li>Make forms clearly labeled</li>
+                        <li>Test with keyboard navigation</li>
+                        <li>Use descriptive link text</li>
+                    </ul>
+                    <p>
+                        By implementing these practices, you'll create a more inclusive web experience for everyone.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-post" id="post4">
+                <div class="post-header">
+                    <h2>JavaScript Basics: Variables and Data Types</h2>
+                    <div class="post-meta">
+                        <span class="date">May 1, 2026</span>
+                        <span class="author">By Your Name</span>
+                        <span class="reading-time">8 min read</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>
+                        JavaScript is the programming language of the web, enabling interactive features on websites.
+                        Whether you're new to programming or looking to refresh your JavaScript knowledge, understanding
+                        variables and data types is essential.
+                    </p>
+                    <h3>What are Variables?</h3>
+                    <p>
+                        Variables are containers for storing data values. In JavaScript, you can declare variables using
+                        <code>var</code>, <code>let</code>, or <code>const</code>. Modern JavaScript recommends using
+                        <code>let</code> and <code>const</code> over <code>var</code>.
+                    </p>
+                    <h3>JavaScript Data Types</h3>
+                    <ul>
+                        <li><strong>String:</strong> Text data, enclosed in quotes</li>
+                        <li><strong>Number:</strong> Integers and floating-point numbers</li>
+                        <li><strong>Boolean:</strong> True or false values</li>
+                        <li><strong>Null:</strong> Intentional absence of value</li>
+                        <li><strong>Undefined:</strong> Variable declared but not assigned</li>
+                        <li><strong>Object:</strong> Collection of key-value pairs</li>
+                        <li><strong>Array:</strong> Ordered list of values</li>
+                    </ul>
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use <code>const</code> by default</li>
+                        <li>Use <code>let</code> when you need to reassign</li>
+                        <li>Avoid <code>var</code> in modern JavaScript</li>
+                        <li>Use meaningful variable names</li>
+                        <li>Keep variables in the appropriate scope</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to My Newsletter</h2>
+            <p>Get updates on new blog posts and web development tips delivered to your inbox.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+</body>
+</html>
