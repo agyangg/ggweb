@@ -129,7 +129,7 @@ ggweb/
 
 ### Update Personal Information
 - Replace "Gyan Guragain" with your name throughout HTML files
-- Update email addresses: `gyan.guragain@stxaviers.edu.np`
+- Update email addresses: `g.guragain@sxg.edu.np`
 - Modify school information as needed
 - Update social media links (GitHub, LinkedIn)
 
