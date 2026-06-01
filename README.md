@@ -219,9 +219,10 @@ This project is open source and available under the MIT License.
 ## 📞 Contact
 
 For inquiries about courses, tutoring, or collaboration:
-- 📧 Email: gyan.guragain@stxaviers.edu.np
+- 📧 Email: g.guragain@sxg.edu.np
 - 🏫 School: St. Xavier's School, Godavari, Lalitpur, Nepal
 - 🔗 GitHub: https://github.com/agyangg
+- Facebook: [Gyan Guragain](https://www.facebook.com/guragain.g)
 
 ---
 
