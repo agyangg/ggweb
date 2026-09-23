@@ -1,207 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gyan Guragain - Computer Science Teacher</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gyan Guragain | Teacher Portfolio</title>
+<meta name="description" content="Professional teacher portfolio of Gyan Guragain, Computer Science teacher at St. Xavier's School, Godavari.">
+<style>
+:root{--navy:#17324d;--blue:#2878b5;--light:#f4f8fb;--gold:#e6a93a;--text:#263746;--muted:#66788a;--white:#fff;--shadow:0 12px 35px rgba(23,50,77,.10)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.navwrap{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:15px 22px}
+.logo{font-weight:800;color:var(--navy);font-size:1.25rem}.logo span{color:var(--blue)}
+.links{display:flex;gap:22px;font-size:.92rem;color:#506274}.links a:hover{color:var(--blue)}
+.hero{background:linear-gradient(135deg,#17324d,#245f8d 65%,#3488bd);color:#fff;padding:85px 22px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.badge{display:inline-block;background:rgba(255,255,255,.14);padding:7px 14px;border-radius:30px;font-size:.82rem}
+h1{font-size:clamp(2.5rem,6vw,4.8rem);line-height:1.05;margin:18px 0}
+.hero p{font-size:1.12rem;max-width:650px;color:#e8f2f8}
+.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:12px 19px;border-radius:8px;font-weight:700}.primary{background:#fff;color:var(--navy)}.outline{border:1px solid rgba(255,255,255,.5)}
+.profile{display:flex;justify-content:center}.portrait{width:270px;height:310px;border-radius:28px;background:linear-gradient(160deg,#e9f2f7,#c9dce8);display:flex;align-items:center;justify-content:center;color:#567084;font-size:5rem;font-weight:800;box-shadow:0 20px 50px rgba(0,0,0,.2)}
+section{padding:75px 22px}.container{max-width:1120px;margin:auto}.section-title{text-align:center;margin-bottom:42px}.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.4px;font-size:.78rem}.section-title h2{font-size:2.1rem;color:var(--navy);margin:8px 0}.section-title p{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:35px}.card{background:#fff;border-radius:15px;padding:28px;box-shadow:var(--shadow);border:1px solid #e8eef3}
+.about{background:var(--light)}.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.fact{padding:18px;background:#fff;border-radius:12px}.fact b{display:block;color:var(--navy)}.fact span{font-size:.88rem;color:var(--muted)}
+.timeline{border-left:3px solid #dce9f2;padding-left:25px}.item{position:relative;margin-bottom:30px}.item:before{content:"";position:absolute;left:-34px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:4px solid #e7f1f8}.item h3{margin:0;color:var(--navy)}.date{color:var(--blue);font-weight:700;font-size:.86rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:#eaf4fa;color:#24638e;padding:8px 13px;border-radius:25px;font-size:.9rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{text-align:center;background:var(--navy);color:#fff;border-radius:14px;padding:25px}.stat strong{font-size:2rem;display:block}.stat span{font-size:.82rem;color:#d8e6ef}
+.resource{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:18px 0;border-bottom:1px solid #e5ebef}.resource:last-child{border:0}.resource h3{margin:0;color:var(--navy);font-size:1rem}.tag{font-size:.75rem;background:#f3ead8;color:#8b661d;padding:5px 9px;border-radius:15px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.photo{height:190px;border-radius:14px;background:linear-gradient(135deg,#dbeaf3,#edf4f8);display:flex;align-items:center;justify-content:center;color:#668096;font-weight:700}
+.contact{background:var(--light)}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-item{background:#fff;padding:20px;border-radius:12px}.contact-item b{display:block;color:var(--navy)}.contact-item a{color:var(--blue)}
+footer{background:#10283d;color:#c9d9e4;text-align:center;padding:28px 20px;font-size:.9rem}
+@media(max-width:800px){.hero-inner,.grid2,.contactbox{grid-template-columns:1fr}.profile{order:-1}.portrait{width:190px;height:210px;font-size:3.5rem}.links{display:none}.stats{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){section{padding:55px 17px}.stats,.gallery,.facts{grid-template-columns:1fr}.hero{padding:60px 17px}}
+</style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo"><a href="index.html">Gyan Guragain</a></div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav><div class="navwrap">
+<a class="logo" href="#home">GG<span>•</span> Portfolio</a>
+<div class="links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#resources">Resources</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+</div></nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to My Teaching Platform</h1>
-            <p>Computer Science Teacher | Educator | Mentor</p>
-            <p class="tagline">St. Xavier's School, Godavari, Lalitpur, Nepal</p>
-            <a href="courses.html" class="cta-button">Explore My Courses</a>
-        </div>
-    </section>
+<header class="hero" id="home"><div class="hero-inner">
+<div>
+<span class="badge">TEACHER • EDUCATOR • MENTOR</span>
+<h1>Gyan Guragain</h1>
+<p>Computer Science and ICT educator passionate about helping students learn technology through creativity, collaboration, practical projects, and purposeful digital learning.</p>
+<div class="buttons"><a class="btn primary" href="#about">Explore My Portfolio</a><a class="btn outline" href="#contact">Get in Touch</a></div>
+</div>
+<div class="profile"><div class="portrait">GG</div></div>
+</div></header>
 
-    <!-- Introduction Section -->
-    <section class="intro">
-        <div class="container">
-            <h2>Welcome</h2>
-            <p>
-                I am Gyan Guragain, a dedicated Computer Science educator committed to fostering problem-solving skills
-                and technological literacy. At St. Xavier's School, Godavari, I strive to create an engaging learning environment
-                where every student can develop a strong foundation in computer science and technology.
-            </p>
-            <p>
-                My teaching philosophy emphasizes hands-on learning, practical applications, and developing critical thinking skills
-                through programming and computational thinking.
-            </p>
-        </div>
-    </section>
+<section id="about" class="about"><div class="container">
+<div class="section-title"><div class="eyebrow">About Me</div><h2>Teaching with purpose</h2><p>A professional sample profile prepared for Gyan Guragain.</p></div>
+<div class="grid2"><div class="card">
+<p>I am <b>Gyan Guragain</b>, an educator associated with <b>St. Xavier's School, Godavari</b>. I am passionate about computer education and about creating learning experiences that encourage curiosity, problem-solving, collaboration, and responsible use of technology.</p>
+<p>My teaching approach focuses on clear concepts, practical activities, digital skills, and helping students become confident independent learners.</p>
+</div><div class="facts">
+<div class="fact"><b>School</b><span>St. Xavier's School, Godavari</span></div>
+<div class="fact"><b>Area</b><span>Computer Science & ICT</span></div>
+<div class="fact"><b>Portfolio</b><span>Teacher • Educator • Mentor</span></div>
+<div class="fact"><b>Website</b><span>sxg.edu.np</span></div>
+</div></div>
+</div></section>
 
-    <!-- Quick Info Cards -->
-    <section class="info-cards">
-        <div class="container">
-            <div class="info-card">
-                <h3>🏫 Current Position</h3>
-                <p><strong>Computer Science Teacher</strong></p>
-                <p class="subtitle">St. Xavier's School, Godavari</p>
-            </div>
-            <div class="info-card">
-                <h3>📍 Location</h3>
-                <p><strong>Godavari, Lalitpur</strong></p>
-                <p class="subtitle">Nepal</p>
-            </div>
-            <div class="info-card">
-                <h3>🎯 Focus</h3>
-                <p><strong>Computer Science Education</strong></p>
-                <p class="subtitle">Programming & Technology</p>
-            </div>
-        </div>
-    </section>
+<section><div class="container"><div class="stats">
+<div class="stat"><strong>ICT</strong><span>Teaching Focus</span></div><div class="stat"><strong>MS</strong><span>Office & Productivity</span></div><div class="stat"><strong>Web</strong><span>Digital Skills</span></div><div class="stat"><strong>∞</strong><span>Learning Mindset</span></div>
+</div></div></section>
 
-    <!-- Featured Courses -->
-    <section class="featured-courses">
-        <div class="container">
-            <h2>Featured Courses</h2>
-            <div class="courses-grid">
-                <article class="course-card">
-                    <div class="course-icon">💻</div>
-                    <h3>Introduction to Programming</h3>
-                    <p>Learn the fundamentals of programming with Python. Perfect for beginners.</p>
-                    <a href="courses.html">View Course →</a>
-                </article>
-                <article class="course-card">
-                    <div class="course-icon">🌐</div>
-                    <h3>Web Development Basics</h3>
-                    <p>Master HTML, CSS, and JavaScript to build modern websites.</p>
-                    <a href="courses.html">View Course →</a>
-                </article>
-                <article class="course-card">
-                    <div class="course-icon">🗄️</div>
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>Understand DSA concepts essential for problem-solving.</p>
-                    <a href="courses.html">View Course →</a>
-                </article>
-            </div>
-        </div>
-    </section>
+<section id="experience"><div class="container">
+<div class="section-title"><div class="eyebrow">Professional Profile</div><h2>Education & Experience</h2></div>
+<div class="grid2"><div class="card"><h3>Educational Qualifications</h3><div class="timeline">
+<div class="item"><div class="date">Qualification</div><h3>Master's / Bachelor's Degree</h3><p>Education and/or Computer Science — details can be customized here.</p></div>
+<div class="item"><div class="date">Professional Learning</div><h3>ICT & Educational Technology</h3><p>Continuous professional development in digital teaching and learning.</p></div>
+</div></div>
+<div class="card"><h3>Teaching Experience</h3><div class="timeline">
+<div class="item"><div class="date">Present</div><h3>Teacher — St. Xavier's School, Godavari</h3><p>Supporting students through computer studies, ICT activities, digital skills, and school technology initiatives.</p></div>
+<div class="item"><div class="date">Earlier Experience</div><h3>Teaching & Educational Activities</h3><p>Classroom instruction, assessment preparation, student projects, and co-curricular technology activities.</p></div>
+</div></div></div>
+</div></section>
 
-    <!-- Latest Blog Posts -->
-    <section class="latest-posts">
-        <div class="container">
-            <h2>Latest Blog Posts</h2>
-            <div class="posts-preview">
-                <article class="post-preview">
-                    <h3><a href="blog.html#post1">Getting Started with Python Programming</a></h3>
-                    <p class="date">Published on June 1, 2026</p>
-                    <p>Learn why Python is the ideal language for beginners and how to start your programming journey...</p>
-                    <a href="blog.html#post1">Read More →</a>
-                </article>
-                <article class="post-preview">
-                    <h3><a href="blog.html#post2">Web Development: From HTML to Interactive Sites</a></h3>
-                    <p class="date">Published on May 28, 2026</p>
-                    <p>Discover how to create dynamic, responsive websites using modern web technologies...</p>
-                    <a href="blog.html#post2">Read More →</a>
-                </article>
-            </div>
-            <a href="blog.html" class="view-all">View All Blog Posts →</a>
-        </div>
-    </section>
+<section id="skills" class="about"><div class="container">
+<div class="section-title"><div class="eyebrow">Expertise</div><h2>Subjects & Skills</h2></div>
+<div class="grid2"><div class="card"><h3>Subjects & Topics</h3><div class="skills"><span class="skill">Computer Fundamentals</span><span class="skill">MS Word</span><span class="skill">MS Excel</span><span class="skill">MS PowerPoint</span><span class="skill">Multimedia</span><span class="skill">Internet & Networking</span><span class="skill">Web Design</span><span class="skill">Digital Citizenship</span></div></div>
+<div class="card"><h3>Professional Skills</h3><div class="skills"><span class="skill">Lesson Planning</span><span class="skill">Project-Based Learning</span><span class="skill">Classroom Management</span><span class="skill">Educational Technology</span><span class="skill">Assessment Design</span><span class="skill">Student Mentoring</span></div></div></div>
+</div></section>
 
-    <!-- Teaching Highlights -->
-    <section class="highlights">
-        <div class="container">
-            <h2>Teaching Philosophy</h2>
-            <div class="highlights-list">
-                <div class="highlight-item">
-                    <div class="highlight-icon">🔍</div>
-                    <div class="highlight-content">
-                        <h3>Practical Learning</h3>
-                        <p>Focus on hands-on projects and real-world applications of computer science concepts.</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-icon">💡</div>
-                    <div class="highlight-content">
-                        <h3>Problem-Solving</h3>
-                        <p>Develop critical thinking and computational skills through challenging problems.</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-icon">🚀</div>
-                    <div class="highlight-content">
-                        <h3>Innovation</h3>
-                        <p>Encourage creativity and exploration of cutting-edge technologies.</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-icon">🤝</div>
-                    <div class="highlight-content">
-                        <h3>Collaboration</h3>
-                        <p>Build teamwork and communication skills essential for tech industry.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="resources"><div class="container">
+<div class="section-title"><div class="eyebrow">For Students</div><h2>Teaching Resources</h2><p>Resources can be linked here when you add your own files.</p></div>
+<div class="card">
+<div class="resource"><div><h3>Grade 6 Computer — Revision Notes</h3><small>PDF • Computer Fundamentals</small></div><span class="tag">RESOURCE</span></div>
+<div class="resource"><div><h3>MS Word — Practice Worksheet</h3><small>DOCX • Word Processing</small></div><span class="tag">RESOURCE</span></div>
+<div class="resource"><div><h3>PowerPoint — Presentation Activity</h3><small>PPTX • Multimedia</small></div><span class="tag">RESOURCE</span></div>
+<div class="resource"><div><h3>Basic HTML — Student Project Guide</h3><small>PDF • Web Design</small></div><span class="tag">RESOURCE</span></div>
+</div></div></section>
 
-    <!-- School Information -->
-    <section class="school-info">
-        <div class="container">
-            <h2>About St. Xavier's School</h2>
-            <p>
-              Xavier’s School, Godavari is a school under the management of the Nepal Jesuit Society.
-              Nepal Jesuit Society is the Nepal branch of the Society of Jesus, an international Catholic Religious Order.
-              The Society of Jesus was founded in Europe by St. Ignatius of Loyola in 1540. Members of the Society of Jesus popularly known as the Jesuits,
-              have been active in the field of education and other fields of service worldwide since its origin.           
-            </p>
-            <p>
-                In the Computer Science department, we emphasize practical skills, logical thinking, and preparation
-                for careers in technology and software development.
-            </p>
-        </div>
-    </section>
+<section id="gallery" class="about"><div class="container">
+<div class="section-title"><div class="eyebrow">School Life</div><h2>Activities & Gallery</h2><p>Replace these placeholders with your own school photographs.</p></div>
+<div class="gallery"><div class="photo">ICT Workshop</div><div class="photo">Student Project Fair</div><div class="photo">Coding Activity</div><div class="photo">Computer Lab</div><div class="photo">Teacher Training</div><div class="photo">School Exhibition</div></div>
+</div></section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Have questions about courses or want to discuss computer science education? Feel free to reach out.</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>📍 School</h3>
-                    <p>St. Xavier's School<br>Godavari, Lalitpur<br>Nepal</p>
-                </div>
-                <div class="contact-item">
-                    <h3>📧 Email</h3>
-                    <p><a href="mailto:g.guragain@sxg.edu.np">g.guragain@sxg.edu.np</a></p>
-                </div>
-                <div class="contact-item">
-                    <h3>🔗 Connect</h3>
-                    <p>
-                        <a href="https://github.com/agyangg" target="_blank">GitHub</a> | 
-                        <a href="https://linkedin.com/in/gyan-guragain" target="_blank">LinkedIn</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section><div class="container"><div class="section-title"><div class="eyebrow">Highlights</div><h2>Achievements & Professional Development</h2></div>
+<div class="grid2"><div class="card"><h3>Selected Areas</h3><ul><li>Computer education and ICT integration</li><li>Student project and activity coordination</li><li>Digital learning resource development</li><li>Technology-based classroom activities</li></ul></div>
+<div class="card"><h3>Professional Development</h3><ul><li>Educational technology and digital learning</li><li>Project-based learning</li><li>Digital assessment and classroom technology</li><li>Continuous ICT skills development</li></ul></div></div>
+</div></section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Gyan Guragain. All rights reserved.</p>
-            <p>Computer Science Teacher at St. Xavier's School, Godavari, Lalitpur, Nepal</p>
-        </div>
-    </footer>
-</body>
-</html>
+<section id="contact" class="contact"><div class="container">
+<div class="section-title"><div class="eyebrow">Contact</div><h2>Let's connect</h2></div>
+<div class="contactbox">
+<div class="contact-item"><b>Email</b><a href="mailto:g.guragain@sxg.edu.np">g.guragain@sxg.edu.np</a></div>
+<div class="contact-item"><b>Phone</b><a href="tel:015174058">01-5174058</a></div>
+<div class="contact-item"><b>School Website</b><a href="https://sxg.edu.np" target="_blank">sxg.edu.np</a></div>
+<div class="contact-item"><b>Facebook</b><a href="https://www.facebook.com/stxaviersgodavari" target="_blank">St. Xavier's School, Godavari</a></div>
+</div>
+</div></section>
+
+<footer>© 2026 Gyan Guragain • Teacher Portfolio • St. Xavier's School, Godavari</footer>
+</body></html>
